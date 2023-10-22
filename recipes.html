@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Shadows+Into+Light&family=Sometype+Mono&display=swap');
+      </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipes</title>
+</head>
+<body>
+  
+    <nav>
+        <ul class = "sidebar">
+            <li onclick= hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>  
+            <li><a href="index.html" >Pets</a></li>
+            <li><a href="recipes.html" class="active" id="current">Recipes</a></li>
+            <li><a href="travel.html" >Travel</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://www.si.umich.edu/programs/courses/339">SI 339</a></li>  
+          <li class = "hideOnMobile" ><a href="index.html" >Pets</a></li>
+          <li class = "hideOnMobile" ><a href="recipes.html" class="active" id="current">Recipes</a></li>
+          <li class = "hideOnMobile" ><a href="travel.html" >Travel</a></li>
+          <li class = "menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+    
+    
+    <script>
+      function showSidebar(){
+       const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    
+
+    <Header>
+    <h1>Recipes</h1>
+    </Header>
+   
+   
+    <!-- <a href = "#main">Skip to Main Content</a> -->
+    <a href = "#main" class="skip-link" aria-label="Skip to Main Content"></a>
+
+    <div class = "skip-to">
+        Skip to: 
+        <a href = "#cookies" class="skip-link">Cookies</a>
+        <a href = "#tomatoes" class="skip-link">Tomatoes&Eggs</a>
+        <a href = "#potatoes" class="skip-link">BakedPotatoes</a>
+      </div>
+    
+      <br>
+      <br>
+
+    <main class="main-container" id="main">
+        <div id="cookies">
+            <h2>Double Chocolate Cookies</h2>
+            <h3>Origin: Michigan</h3>
+            <h3>Source: Family Recipe</h3>
+            <h3>Category: Dessert</h3>
+    
+            <dev class="container">
+            <img src="images/recipes/double_chocolate_cookies.png" width = "400" height="400" alt="">
+            <dev class="content">
+            <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
+            </dev>
+             </dev>
+            <h3>Recipe Ingredients</h3>
+            <ul>
+                <li>Unsalted butter</li>
+                <li>Granulated Sugar</li>
+                <li>Packed light or dark brown sugar</li>
+                <li>Large egg</li>
+                <li>Pure vanilla extract</li>
+                <li>Semi-sweet chocolate chunks (melted)</li>
+                <li>All-purpose flour</li>
+                <li>Natural unsweetened cocoa powder</li>
+                <li>Baking soda</li>
+                <li>Salt</li>
+                <li>Semi-sweet chocolate chunks</li>
+            </ul>
+    
+            <h3>Recipe Steps</h3> 
+            <ol>
+                <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+                <li>Add the egg and vanilla extract and beat well</li>
+                <li>Add the melted chocolate</li>
+                <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
+                <li>Combine the wet and dry ingredients</li>
+                <li>Add the unmelted chocolate chunks.</li> 
+                <li>Form 15 cookies and place on a baking sheet.</li>
+                <li>Cook for 12 to 13 minutes at 350 degrees.</li>
+            </ol>
+            <div class="galleries">
+            <h3>Additional Food images</h3>
+            <img src="images/recipes/double_chocolate_chips.png" width = "200" height="200" alt="A small pile of chocolate chips">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width = "200" height="200" alt="Chocolate melting in a boiler">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width = "200" height="200" alt="Brown sugar in three different shades of darkness">     
+        </div>
+    </div>
+        
+        <br>
+        <br>
+        
+        <div id="tomatoes">
+        <h2>Tomato and Eggs</h2>
+
+        <h3>Origin: China</h3>
+        <h3>Source: Own recipe</h3>
+        <h3>Category: Main dish</h3>
+
+        <div class="container">
+        <img src="images/recipes/tomato-egg-main-image.jpeg" alt="" width="400" height="400">
+        <div class="content">
+        <p>
+          Tomato and eggs is a hot dish which originated from China. It is a simple and fast dish to
+          make, but it has good nutritional value. It is a very satisfying food to eat and popularly
+          served with rice and topped with green onions.
+        </p>
+    </div>
+</div>
+
+        <h3>Recipe Ingredients</h3>
+
+        <ul>
+          <li>Tomatoes</li>
+          <li>Eggs</li>
+          <li>Salt</li>
+          <li>Sugar</li>
+          <li>Cooking oil</li>
+        </ul>
+
+        <h3>Recipe Steps</h3>
+
+        <ol>
+          <li>Crack eggs into a bowl and mix until scrambled.</li>
+          <li>Cut tomatoes into pieces around the size of your thumb.</li>
+          <li>Oil a hot pan and cook the eggs until satisfied then remove the eggs.</li>
+          <li>Re-oil the pan and cook the tomatoes until they loosen.</li>
+          <li>Combine eggs and tomatoes and season with salt and sugar.</li>
+        </ol>
+
+<br>
+<br>
+
+        <div class="galleries">
+        <img src="images/recipes/tomato-egg-side1.jpeg" alt="Tomato and eggs served with rice." width="200" height="200">
+        <img src="images/recipes/tomatoes-cooking.webp" alt="Tomatoes cooking in a pan." width="200" height="200">
+        <img src="images/recipes/scramble-eggs.jpeg" alt="Scrambled eggs cooking in a pan." width="200" height="200">
+    </div>
+
+        <!--Eric Xu-->
+        </div>
+
+<br><br>
+
+        <div id="potatoes">
+        <h2>Twice Baked Potato</h2>
+        <h3>Origin: South America</h3>
+        <h3>Source: All Recipes Website</span>
+        <h3>Category: Comfort Dish</h3>
+
+
+        <div class="container">
+
+        <img src="images/recipes/Bakedpotato.jpeg" alt="Baked Potatoes Final" width="400" height="400">
+
+        <div class="content">
+        <p>
+        These twice-baked potatoes work perfectly as a simple, crowd-pleasing entrée or as a rich side dish. It is believed that baked potatoes originate from South America, or more specifically, Peru. The Inca Indians in Peru were said to be the first to originally cultivate potatoes and when the Spanish conquistadors conquered Peru, they brought the potato to Europe.
+        </p>
+        </div>
+        </div>
+
+        <h3>Recipe Ingredients</h3>
+
+        <ul>
+          <li>4 large baking potatoes</li>
+          <li>8 slices bacon</li>
+          <li>1 cup sour cream</li>
+          <li>½ cup milk</li>
+          <li> 4 tablespoons butter</li>
+          <li> ½ teaspoon salt</li>
+          <li> ½ teaspoon pepper</li>
+          <li> 1 cup shredded Cheddar cheese, divided</li>
+          <li> 8 green onions, sliced, divided</li>
+        </ul>
+
+
+        <h3>Recipe Steps</h3>
+
+        <ol>
+          <li>Gather ingredients and preheat the oven to 350 degrees F (175 degrees C). </li>
+          <li>Bake potatoes in the preheated oven until tender, about 1 hour, depending on the size of your potatoes. Set potatoes aside until cool enough to handle.</li>
+          <li>Meanwhile, place bacon in a large, deep skillet. Cook over medium-high heat until evenly brown. Drain, crumble, and set aside.</li>
+          <li>Slice potatoes in half lengthwise and scoop the flesh into a large bowl; save skins.</li>
+          <li>Add sour cream, milk, butter, salt, pepper, 1/2 cup cheese, and 1/2 of the green onions to the potato; mix with a hand mixer until well blended and creamy.</li>
+          <li>Spoon the mixture into the potato skins; top each with remaining cheese, green onions, and bacon.</li>
+          <li>Return potatoes to the preheated oven and continue baking until the cheese is melted, about 15 minutes. Serve Hot!</li>
+        </ol>
+
+        <div class="galleries">
+        <img src="images/recipes/Ingredients.jpeg" alt="All the ingredients needed for this recipe." width="200" height="200">
+        <img src="images/recipes/Slicedpotatoes.jpeg" alt="Scooped out potatoes." width="200" height="200">
+        <img src="images/recipes/Mixture.jpeg" alt="Mixture to put in the potatoes ." width="200" height="200">
+        </div>
+    </div>
+        
+    </main>
+</body>
+</html>
