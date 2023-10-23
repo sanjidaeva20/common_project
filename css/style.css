@@ -108,6 +108,12 @@ width: 100%;
     display: none;
 }
 
+.skip-link-1{
+    display: none;
+}
+.skip-link-1:focus { 
+    display: inline; 
+}
 
 .skip-link{
     text-decoration: underline;
@@ -207,10 +213,12 @@ figure:hover{
 
 .galleries {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px; 
+    grid-template-columns:  repeat(2, minmax(200px, 2fr));
+    gap: 20px; 
     justify-content: center;
     align-items: center;
+    width: 70%; 
+  margin: 0 auto;
   }
   
 .galleries img {
