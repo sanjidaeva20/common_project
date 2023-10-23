@@ -283,7 +283,7 @@ span {
   }
   @media screen and (max-width: 800px){
     .hideOnMobile{
-        display: flex;
+        display: none;
     }
     .menuButton{
         display: block;
